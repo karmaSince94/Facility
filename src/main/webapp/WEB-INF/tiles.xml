@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+       
+<tiles-definitions>
+	<definition name="base.definition" template="/template/template.jsp">
+		<put-attribute name="header" value="/template/header.jsp" />
+		<!-- <put-attribute name="menu" value="/template/Logout.jsp" />
+		<put-attribute name="menu" value="/template/menu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/template/footer.jsp" />
+	</definition>
+
+	<definition name="Error" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Error.jsp" />
+	</definition>
+
+	<definition name="Login" extends="base.definition">
+		<put-attribute name="menu" value="" />
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Login.jsp" />
+	</definition>
+	
+	<definition name="Fail" extends="base.definition">
+		<put-attribute name="menu" value="" />
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Fail.jsp" />
+	</definition>
+
+	<definition name="RegisterFacility" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/RegisterFacility.jsp" />
+	</definition>
+
+
+	<definition name="Success" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Success.jsp" />
+	</definition>
+	<definition name="UpdateFacility" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/UpdateFacility.jsp" />
+	</definition>
+	
+	<definition name="View" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/View.jsp" />
+	</definition>
+
+</tiles-definitions>
